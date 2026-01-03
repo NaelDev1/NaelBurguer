@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Controllers\BaseController;
+use CodeIgniter\HTTP\ResponseInterface;
+
+class Main extends BaseController
+{
+    public function index()
+    {
+        //home page
+        return view("home");
+    }
+
+    public function products() {
+
+        return view("products");
+
+    }
+
+    public function where_we_are() {
+        return view("where_we_are");
+
+
+    }
+
+}
